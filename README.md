@@ -7,7 +7,7 @@ On board:
 * Phaser
 
 ```sh
-git clone https://github.com/Luchanso/stater-kit.git
+git clone https://github.com/Luchanso/starter-kit.git
 npm i
 npm i gulp -g
 ```
