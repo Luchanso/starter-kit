@@ -8,4 +8,6 @@ On board:
 
 ```sh
 git clone https://github.com/Luchanso/stater-kit.git
+npm i
+npm i gulp -g
 ```
