@@ -1,6 +1,8 @@
 import * as analytics from './vendors/analytics';
+import * as stats from './vendors/stats';
 
 analytics.init();
+stats.init();
 
 Engine.game = new Phaser.Game(Engine.maxWidth, Engine.maxHeight, Phaser.AUTO);
 
