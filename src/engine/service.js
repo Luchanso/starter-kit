@@ -1,6 +1,4 @@
-class Service {
+export default class Service {
 }
 
 // Service.Audio = new Audio()
-
-export default Service;

@@ -1,4 +1,4 @@
-class Boot extends Phaser.State {
+export default class Boot extends Phaser.State {
   constructor() {
     super();
   }
@@ -14,5 +14,3 @@ class Boot extends Phaser.State {
     this.state.start('Loader');
   }
 }
-
-Engine.Boot = Boot;

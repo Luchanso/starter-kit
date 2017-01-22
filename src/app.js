@@ -1,20 +1,21 @@
 import * as analytics from './vendors/analytics';
 import * as stats from './vendors/stats';
+import Config from '../config';
+import Boot from './boot/boot';
+import Game from './game/game';
+import Loader from './loader/loader';
 
 analytics.init();
 stats.init();
 
-Engine.game = new Phaser.Game(Engine.maxWidth, Engine.maxHeight, Phaser.AUTO);
+let game = new Phaser.Game(Config.width, Config.height, Phaser.AUTO);
 
 window.onresize = () => {
-  Engine.game.scale.setGameSize(window.innerWidth, window.innerHeight);
+  game.scale.setGameSize(window.innerWidth, window.innerHeight);
 }
 
-let a = { b: 123456 };
-let { b } = a;
+game.state.add('Boot', Boot);
+game.state.add('Game', Game);
+game.state.add('Loader', Loader);
 
-Engine.game.state.add('Boot', Boot);
-Engine.game.state.add('Game', Game);
-Engine.game.state.add('Loader', Loader);
-
-Engine.game.state.start('Boot');
+game.state.start('Boot');
