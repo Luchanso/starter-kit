@@ -1,4 +1,4 @@
-class Loader extends Phaser.State {
+export default class Loader extends Phaser.State {
   constructor() {
     super();
   }
@@ -12,7 +12,7 @@ class Loader extends Phaser.State {
   }
 
   addProgressLabel() {
-    let style = {
+    const style = {
       font: '41px Open Sans',
       fill: '#00E676',
     }
@@ -25,5 +25,3 @@ class Loader extends Phaser.State {
     this.progressLabel.text = `Loading ${progress}% (${totalLoaded}/${totalFiles})`;
   }
 }
-
-Engine.Loader = Loader;
