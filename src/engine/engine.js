@@ -3,5 +3,7 @@ let Engine = {
   minHeight: 320,
 
   maxWidth: window.innerWidth,
-  maxHeight: window.innerHeight
+  maxHeight: window.innerHeight,
 }
+
+export default Engine;

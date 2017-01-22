@@ -1,7 +1,7 @@
 # Luchanso Starter Kit
 
 On board:
-* Gulp
+* Webpack
 * ES6
 * Babel
 * Phaser
@@ -11,7 +11,7 @@ Install:
 git clone https://github.com/Luchanso/starter-kit.git
 cd starter-kit
 npm i
-npm i gulp -g
+npm start # or npm run build
 ```
 
 One line install:
